@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Moya-SwiftyJSONMapper"
-  s.version          = "2.2.0"
+  s.version          = "2.2.1"
   s.summary          = "Map objects through SwiftyJSON in combination with Moya"
   s.description  = <<-EOS
     [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) bindings for
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
 
   s.subspec "ReactiveCocoa" do |ss|
     ss.source_files = "Source/ReactiveCocoa/*.swift"
-    ss.dependency "Moya/ReactiveCocoa"
+    ss.dependency "Moya/ReactiveSwift"
     ss.dependency "Moya-SwiftyJSONMapper/Core"
     ss.dependency "ReactiveSwift"
   end
